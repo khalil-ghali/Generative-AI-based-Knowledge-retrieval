@@ -1,4 +1,4 @@
-# README for Generative AI Knowledge Retrieval
+# Generative AI Knowledge Retrieval
 
 ## Overview
 
