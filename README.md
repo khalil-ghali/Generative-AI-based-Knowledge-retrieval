@@ -24,12 +24,6 @@ generative-ai-knowledge-retrieval
 │       ├── text_processing.py
 │       ├── embeddings.py
 │       ├── translation.py
-├── tests
-│   ├── __init__.py
-│   ├── test_document_chat.py
-│   ├── test_youtube_chat.py
-│   ├── test_website_chat.py
-│   ├── test_utils.py
 ├── .env
 ├── requirements.txt
 └── README.md
