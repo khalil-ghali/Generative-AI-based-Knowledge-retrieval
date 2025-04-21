@@ -1,0 +1,13 @@
+langchain
+transformers
+accelerate
+bitsandbytes
+sentence-transformers
+chromadb==0.3.29
+InstructorEmbedding
+streamlit
+pyPDF
+youtube-transcript-api
+deep_translator
+langdetect
+langchain_openai
