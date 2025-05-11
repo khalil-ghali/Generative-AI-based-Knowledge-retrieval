@@ -4,7 +4,8 @@ class Embeddings:
 
     def generate_embeddings(self, text: str):
         # Placeholder for embedding generation logic
-        # This should interface with the actual embedding model
+        # This should interface with the actual embedding model of your choice
+        #openai embeddings work fine with this methodology
         embeddings = self._mock_embedding_model(text)
         return embeddings
 
