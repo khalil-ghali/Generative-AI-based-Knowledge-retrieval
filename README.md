@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Generative AI Knowledge Retrieval** project is an innovative web application designed to use advanced Large Language Models (LLMs) for interacting with various types of text data. Users can upload documents, extract information from YouTube videos, and query websites to obtain precise answers, enhancing their research and learning experiences.
+The **Generative AI Knowledge Retrieval** project is a web application designed to use advanced Large Language Models (LLMs) for interacting with various types of text data. Users can upload documents, extract information from YouTube videos, and query websites to obtain precise answers, enhancing their research and learning experiences.
 
 ## Project Structure
 
@@ -69,7 +69,7 @@ This will start the Streamlit server, and you can access the application in your
 - **YouTube Chat:** Extract content from YouTube videos and query them for information.
 - **Website Chat:** Load website content and ask questions about it.
 
-
+PS: implement the loading of embedding model of your choice as well as setting env variables for your api keys
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any enhancements or bug fixes.
