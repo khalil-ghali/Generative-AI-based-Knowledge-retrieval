@@ -1,33 +1,19 @@
-def translate_text(text: str, target_language: str, api_key: str) -> str:
-    """
-    Translates the given text to the specified target language using a translation API.
+from deep_translator import GoogleTranslator
+from langdetect import detect
 
-    Parameters:
-    - text (str): The text to be translated.
-    - target_language (str): The language to translate the text into (e.g., 'en', 'fr', 'es').
-    - api_key (str): The API key for the translation service.
+class Translator:
+    def __init__(self, target='en'):
+        self.target_lang = target
 
-    Returns:
-    - str: The translated text.
-    """
-    from deep_translator import GoogleTranslator
+    def detect_language(self, text):
+        try:
+            return detect(text)
+        except:
+            return "unknown"
 
-    translator = GoogleTranslator(target=target_language, api_key=api_key)
-    translated_text = translator.translate(text)
-    return translated_text
-
-
-def detect_language(text: str) -> str:
-    """
-    Detects the language of the given text.
-
-    Parameters:
-    - text (str): The text for which to detect the language.
-
-    Returns:
-    - str: The detected language code (e.g., 'en', 'fr', 'es').
-    """
-    from langdetect import detect
-
-    language_code = detect(text)
-    return language_code
+    def translate_to_target(self, text, source=None):
+        if not source:
+            source = self.detect_language(text)
+        if source == self.target_lang:
+            return text
+        return GoogleTranslator(source=source, target=self.target_lang).translate(text)
